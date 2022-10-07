@@ -1,0 +1,1 @@
+Kódy na CC jsou v samostatných větvích dělených podle jazyka vypracování (pokud je někdy udělám nebo seženu lol)
