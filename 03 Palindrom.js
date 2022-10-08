@@ -5,10 +5,7 @@ const rl = readline.createInterface({
     terminal: false
 });
 
-const jePalindrom = (line) => line.toLowerCase().split("").reduce((acc, element, index, arr) => {
-    if (acc != null && !acc) return acc;
-    return element == arr[arr.length - 1 - index]
-}, null);
+const jePalindrom = (line) => String(line).toLowerCase().split("").every((el, index, list) => el == list.at(list.length - 1 - index));
 
 rl.on('line', line => {
     console.log(jePalindrom(line) ? "ano" : "ne");
