@@ -8,9 +8,9 @@ const rl = readline.createInterface({
 
 const numbers = [];
 
-const getUniqueNumbers = (array) => [...new Set(array).values()];
-const getDuplicitNumbers = (array) => [...new Set(array.filter((item, index) => index !== array.indexOf(item)).values())]
-const getNonDuplicitNumbers = (array, duplicits) => array.filter(x => !duplicits.includes(x));
+const getUniqueNumbers = (map) => [...map.keys()];
+const getDuplicitNumbers = (map) => [...map.entries()].filter(([_, value]) => value > 1).map(([key, _]) => key);
+const getNonDuplicitNumbers = (map) => [...map.entries()].filter(([_, value]) => value == 1).map(([key, _]) => key);
 
 const printAllNumbers = () => {
     const frequencies = new Map();
@@ -21,14 +21,12 @@ const printAllNumbers = () => {
         frequencies.set(number, frequencies.get(number) + 1);
     }
 
-    console.log(frequencies);
-
-    const uniques = [...frequencies.keys()];
-    const duplicits = getDuplicitNumbers(numbers);
-    const nonduplicits = getNonDuplicitNumbers(numbers, duplicits);
+    const uniques = getUniqueNumbers(frequencies);
+    const duplicits = getDuplicitNumbers(frequencies);
+    const nonduplicits = getNonDuplicitNumbers(frequencies);
 
     console.log(`all: ${uniques.join()}`);
-    console.log(`>1x: ${duplicits.sort((a, b) => a - b).join()}`);
+    console.log(`>1x: ${duplicits.join()}`);
     console.log(`=1x: ${nonduplicits.join()}`);
 }
 
