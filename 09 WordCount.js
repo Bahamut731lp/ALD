@@ -13,21 +13,18 @@ const add = (dict, word) => dict.set(word, (dict.get(word) ?? 0) + 1);
 
 const processLines = () => {
     let all = lines.flat();
-    console.log(all, all.length);
 
     all.forEach((word) => add(words, word));
     for (let index = 1; index <= all.length; index++) add(phrases, [all[index - 1], all[index]].join(" "));
 }
 
-const format = (header, map) => {
+const format = (header, map, wordLength) => {
     const output = [header];
-    const indent = " - ";
+    const indent = " -";
     const entries = [...map.entries()];
     const count = entries.reduce((acc, v) => acc + v[1], 0);
     const numberToBePrinted = Math.min(entries.length, 15);
-    const wordLength = Math.max(...entries.map(v => v[0].length));
-
-    console.log(count);
+    //const wordLength = Math.max(...entries.map(v => v[0].length));
 
     entries
         //Seřazení podle počtu výskytů
@@ -40,8 +37,12 @@ const format = (header, map) => {
             if (index > (numberToBePrinted - 1)) return false;
 
             const line = [indent];
+            const percentage = 100 * value / count;
+
+            const rounded = Math.round(percentage * 100) / 100;
+
             line.push(String(key).padEnd(wordLength));
-            line.push(Number(100 * value / count).toFixed(2) + "%");
+            line.push(Number(rounded).toFixed(2) + "%");
             line.push(`(${value})`);
 
             output.push(line.join(" "));
@@ -53,13 +54,13 @@ const format = (header, map) => {
 
 const output = () => {
     processLines();
-    format("Word Frequency:", words);
-    format("Phrase Frequency:", phrases);
+    format("Word Frequency:", words, 12);
+    format("Phrase Frequency:", phrases, 20);
     process.exit();
 }
 
 rl.on('line', (line) => {
-    if (!line) return;
+    if (!line.trim()) return;
 
     let wordsInLine = line.trim().split(/\W+/g).map(v => v.toLowerCase());
     lines.push(wordsInLine);
