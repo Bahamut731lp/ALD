@@ -6,27 +6,27 @@
     "python": {
       "symbol": "🐍",
       "description": "Python",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+      "link": "\"<%= description %>\"),"
     },
     "javascript": {
       "symbol": "🟨",
       "description": "Javascript",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+      "link": "\"<%= description %>\"),"
     },
     "typescript": {
       "symbol": "🟦",
       "description": "Typescript",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+      "link": "\"<%= description %>\"),"
     },
     "rust": {
       "symbol": "🦀",
       "description": "Rust",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+      "link": "\"<%= description %>\"),"
     },
     "matlab": {
       "symbol": "🟧",
       "description": "Matlab",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+      "link": "\"<%= description %>\"),"
     }
   },
   "commitType": "docs",
@@ -45,8 +45,18 @@
         "javascript",
         "rust"
       ]
+    },
+    {
+      "login": "matejhampl",
+      "name": "Matěj Hampl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91940093?v=4",
+      "profile": "https://github.com/matejhampl",
+      "contributions": [
+        "python"
+      ]
     }
   ],
   "projectName": "ALD",
-  "projectOwner": "Bahamut731lp"
+  "projectOwner": "Bahamut731lp",
+  "repoType": "github"
 }
