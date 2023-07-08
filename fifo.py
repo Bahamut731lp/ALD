@@ -1,11 +1,14 @@
 """
     Skript pro úlohu 5 z ALD
+    @author matej.hampl
+    @refactor kevin.danek
 """
 import sys
 import string
 
 class Item:
-    """Třída realizující frontu
+    """
+        Třída realizující frontu
     """
 
     def __init__(self, data):
@@ -60,10 +63,15 @@ def main(input_str: list[str]):
 
     my_list = FIFO()
 
-    for line in input_str:
-        my_list.add(string.capwords(line, sep=None))
+    for line_str in input_str:
+        my_list.add(string.capwords(line_str, sep=None))
 
     return my_list.print()
 
 if __name__ == "__main__":
-    print(main(["Pro apliakci zásobník", "toto je ukázka vstupu"]))
+    lines = []
+
+    for line in sys.stdin:
+        lines.append(line)
+
+    print(main(lines))
