@@ -20,7 +20,7 @@ je někdy udělám nebo seženu lol).
 | [09 WordCount](Zadání/09%20WordCount.md)|✔️|||||
 | [10 Clock](Zadání/10%20Clock.md)|✔️|||||
 | [11 GPS](Zadání/11%20GPS.md)|✔️||✔️|||
-| [12 Regex](Zadání/12%20Regex.md)|✔️|||||
+| [12 Regex](Zadání/12%20Regex.md)|✔️||✔️|||
 
 
 ## Contributors
