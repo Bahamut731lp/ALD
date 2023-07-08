@@ -41,7 +41,9 @@
       "contributions": [
         "infra",
         "test",
-        "code"
+        "code",
+        "javascript",
+        "rust"
       ]
     }
   ],
