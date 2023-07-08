@@ -7,7 +7,7 @@ import pytest
 from tabulate import tabulate
 from pylint.lint import Run
 
-FILES = ["lifo.py", "fifo.py", "GPS.py"]
+FILES = ["lifo.py", "fifo.py", "GPS.py", "regex.py"]
 
 # Disable
 
