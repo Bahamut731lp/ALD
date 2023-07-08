@@ -1,32 +1,50 @@
 {
-    "files": [
-        "README.md"
-    ],
-    "types": {
-        "Python": {
-            "symbol": "🐍",
-            "description": "Python",
-            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
-        },
-        "Javascript": {
-            "symbol": "🟨",
-            "description": "Javascript",
-            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
-        },
-        "Typescript": {
-            "symbol": "🟦",
-            "description": "Typescript",
-            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
-        },
-        "Rust": {
-            "symbol": "🦀",
-            "description": "Rust",
-            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
-        },
-        "Matlab": {
-            "symbol": "🟧",
-            "description": "Matlab",
-            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
-        }
+  "files": [
+    "README.md"
+  ],
+  "types": {
+    "Python": {
+      "symbol": "🐍",
+      "description": "Python",
+      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+    },
+    "Javascript": {
+      "symbol": "🟨",
+      "description": "Javascript",
+      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+    },
+    "Typescript": {
+      "symbol": "🟦",
+      "description": "Typescript",
+      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+    },
+    "Rust": {
+      "symbol": "🦀",
+      "description": "Rust",
+      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+    },
+    "Matlab": {
+      "symbol": "🟧",
+      "description": "Matlab",
+      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     }
+  },
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "Bahamut731lp",
+      "name": "Kevin Daněk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27443880?v=4",
+      "profile": "http://bahamut731lp.github.io",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "projectName": "ALD",
+  "projectOwner": "Bahamut731lp"
 }
