@@ -8,11 +8,11 @@ je někdy udělám nebo seženu lol).
 
 ## Řešení zadání z Code Critic
 
-| [Zadání](Zadání/) | Javascript | Typescript | Python | Matlab | C/C++ | Rust | 
-| -----: | :--------: | :--------: | :----: | :----: | :---: | :--: |
-| [01 Hello world](Zadání/01%20Hello%20World.md)|✔️|||✔️||✔️
-| [02 Answer is 42!](Zadání/02%20Answer%20is%2042.md)|✔️|||✔️||✔️
-| [03 Palindrom](Zadání/03%20Palindrom.md)|✔️|||✔️||✔️
+| [Zadání](Zadání/) | Javascript | Typescript | Python | Matlab | C | C++ | Rust | C# | Java| Ruby |
+| -----: | :--------: | :--------: | :----: | :----: | :---: | :--: | :--:| :--: | :--: | :--: |
+| [01 Hello world](Zadání/01%20Hello%20World.md)|✔️|||✔️|||✔️|||
+| [02 Answer is 42!](Zadání/02%20Answer%20is%2042.md)|✔️|||✔️|||✔️
+| [03 Palindrom](Zadání/03%20Palindrom.md)|✔️|||✔️|||✔️
 | [04 Palindrom Number](Zadání/04%20Palindrom%20Number.md.md)|✔️|||||
 | [05 LIFO](Zadání/05%20LIFO.md)|✔️|||||
 | [06 FIFO](Zadání/06%20FIFO.md)|✔️||✔️|||
