@@ -48,14 +48,13 @@ class FIFO:
             result += self.head.data
             result += "\n"
             self.head = self.head.next
-            #print(self.head.data)
         return result.strip()
 
 def main(input_str: list[str]):
     """Metoda vykonávající hlavní funkci programu
 
     Args:
-        input (str): Vstup z testu
+        input_str (str): Vstup z testu
 
     Returns:
         str: Výsledek
