@@ -1,0 +1,32 @@
+{
+    "files": [
+        "README.md"
+    ],
+    "types": {
+        "Python": {
+            "symbol": "🐍",
+            "description": "Python",
+            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+        },
+        "Javascript": {
+            "symbol": "🟨",
+            "description": "Javascript",
+            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+        },
+        "Typescript": {
+            "symbol": "🟦",
+            "description": "Typescript",
+            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+        },
+        "Rust": {
+            "symbol": "🦀",
+            "description": "Rust",
+            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+        },
+        "Matlab": {
+            "symbol": "🟧",
+            "description": "Matlab",
+            "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+        }
+    }
+}
