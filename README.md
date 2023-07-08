@@ -8,7 +8,7 @@ je někdy udělám nebo seženu lol).
 
 ## Řešení zadání z Code Critic
 
-| [Zadání](za) | Javascript | Typescript | Python | Matlab | C/C++ | Rust | 
+| [Zadání](Zadání/) | Javascript | Typescript | Python | Matlab | C/C++ | Rust | 
 | -----: | :--------: | :--------: | :----: | :----: | :---: | :--: |
 | [01 Hello world](Zadání/01%20Hello%20World.md)|✔️|||✔️||✔️
 | [02 Answer is 42!](Zadání/02%20Answer%20is%2042.md)|✔️|||✔️||✔️
