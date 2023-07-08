@@ -3,27 +3,27 @@
     "README.md"
   ],
   "types": {
-    "Python": {
+    "python": {
       "symbol": "🐍",
       "description": "Python",
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     },
-    "Javascript": {
+    "javascript": {
       "symbol": "🟨",
       "description": "Javascript",
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     },
-    "Typescript": {
+    "typescript": {
       "symbol": "🟦",
       "description": "Typescript",
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     },
-    "Rust": {
+    "rust": {
       "symbol": "🦀",
       "description": "Rust",
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     },
-    "Matlab": {
+    "matlab": {
       "symbol": "🟧",
       "description": "Matlab",
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
