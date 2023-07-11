@@ -12,8 +12,30 @@ class Item:
     """
 
     def __init__(self, data):
-        self.data = data
-        self.next = None
+        self._data = data
+        self._next = None
+
+    @property
+    def data(self):
+        """Setter pro data
+
+        Returns:
+            str: Obsah bloku
+        """
+        return self._data
+
+    @property
+    def next_item(self):
+        """Setter pro další blok
+
+        Returns:
+            Block: Reference na další blok v seznamu
+        """
+        return self._next
+
+    @next_item.setter
+    def next_item(self, next_value):
+        self._next = next_value
 
 
 class FIFO:
@@ -36,8 +58,8 @@ class FIFO:
             self.head = temp
             self.prev = temp
 
-        self.prev.next = temp
-        self.prev = self.prev.next
+        self.prev.next_item = temp
+        self.prev = self.prev.next_item
 
     def print(self):
         """Funkce pro vytištění seznamu na standardní výstup
@@ -47,7 +69,7 @@ class FIFO:
         while self.head is not None:
             result += self.head.data
             result += "\n"
-            self.head = self.head.next
+            self.head = self.head.next_item
         return result.strip()
 
 def main(input_str: list[str]):

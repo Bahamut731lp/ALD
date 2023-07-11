@@ -1,7 +1,7 @@
 '''
 Test suite pro úlohu 6
 '''
-import GPS
+import gps
 
 def test_case_trivial_1():
     """
@@ -11,7 +11,7 @@ def test_case_trivial_1():
 
     vzor = """(30 min, 44 km) ceska-lipa -> new-york -> chrastava"""
 
-    vysledek = GPS.main(original.strip().splitlines())
+    vysledek = gps.main(original.strip().splitlines())
     assert vzor == vysledek
 
 def test_case_trivial_2():
@@ -22,7 +22,7 @@ def test_case_trivial_2():
 
     vzor = """(34 min, 36 km) chrastava -> liberec -> turnov"""
 
-    vysledek = GPS.main(original.strip().splitlines())
+    vysledek = gps.main(original.strip().splitlines())
     assert vzor == vysledek
 
 def test_case_1():
@@ -33,7 +33,7 @@ def test_case_1():
 
     vzor = """(24 min, 35 km) new-york -> liberec"""
 
-    vysledek = GPS.main(original.strip().splitlines())
+    vysledek = gps.main(original.strip().splitlines())
     assert vzor == vysledek
 
 def test_case_2():
@@ -48,7 +48,7 @@ jablonec-nad-nisou liberec nejlepsi"""
 (20 min, 20 km) liberec -> jablonec-nad-nisou
 (20 min, 20 km) jablonec-nad-nisou -> liberec"""
 
-    vysledek = GPS.main(original.strip().splitlines())
+    vysledek = gps.main(original.strip().splitlines())
     assert vzor == vysledek
 
 def test_case_3_0():
@@ -67,7 +67,7 @@ turnov chrastava nejkratsi"""
 (10 min, 30 km) ceska-lipa -> new-york
 (34 min, 36 km) turnov -> liberec -> chrastava"""
 
-    vysledek = GPS.main(original.strip().splitlines())
+    vysledek = gps.main(original.strip().splitlines())
     assert vzor == vysledek
 
 def test_case_3_1():
@@ -86,7 +86,7 @@ new-york liberec nejkratsi"""
 (10 min, 30 km) ceska-lipa -> new-york
 (32 min, 24 km) new-york -> chrastava -> liberec"""
 
-    vysledek = GPS.main(original.strip().splitlines())
+    vysledek = gps.main(original.strip().splitlines())
     assert vzor == vysledek
 
 def test_case_3_2():
@@ -105,5 +105,5 @@ jablonec-nad-nisou turnov nejlepsi"""
 (40 min, 60 km) ceska-lipa -> new-york -> jablonec-nad-nisou
 (22 min, 24 km) jablonec-nad-nisou -> turnov"""
 
-    vysledek = GPS.main(original.strip().splitlines())
+    vysledek = gps.main(original.strip().splitlines())
     assert vzor == vysledek

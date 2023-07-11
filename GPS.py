@@ -75,14 +75,14 @@ def dijkstra(matrix, start, end=-1):
 
     for index in range(dimension):
         j = index
-        s = []
+        result = []
 
         while parent[j] != -1:
-            s.append(j)
+            result.append(j)
             j = parent[j]
 
-        s.append(start)
-        path[index] = s[::-1]
+        result.append(start)
+        path[index] = result[::-1]
 
     return (distance[end]-0, path[end]) if end >= 0 else (distance, path)
 
@@ -117,14 +117,14 @@ def process_line(input_str: str):
 
     path = " -> ".join(list(map(lambda x: PLACES[x], path_to_destination)))
 
-    for x in range(0, len(path_to_destination) - 1):
-        summ += graphs[optimisation][path_to_destination[x]][path_to_destination[x + 1]]
+    for index in range(0, len(path_to_destination) - 1):
+        summ += graphs[optimisation][path_to_destination[index]][path_to_destination[index + 1]]
 
     messages = {
         "nejkratsi": f"({summ} min, {distance} km) {path}",
         "nejlepsi": f"({distance} min, {summ} km) {path}"
     }
-    
+
     return messages[optimisation]
 
 def main(input_str: list[str]):
@@ -140,6 +140,5 @@ def main(input_str: list[str]):
     return "\n".join(results).strip()
 
 if __name__ == "__main__":
-    print(main(["new-york liberec nejkratsi"]))
-    #for line in sys.stdin:
-    #    print(main(line))
+    for line in sys.stdin:
+        print(main(line))

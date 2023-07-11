@@ -13,8 +13,26 @@ class Block:
     """
 
     def __init__(self, content: str = None, next_item = None):
-        self.str = content
-        self.next = next_item
+        self._str = content
+        self._next = next_item
+
+    @property
+    def content(self):
+        """Setter pro str
+
+        Returns:
+            str: Obsah bloku
+        """
+        return self._str
+
+    @property
+    def next(self):
+        """Setter pro další blok
+
+        Returns:
+            Block: Reference na další blok v seznamu
+        """
+        return self._next
 
 
 class LIFO:
@@ -41,7 +59,7 @@ class LIFO:
         if self.top is None:
             return "LIFO is empty"
 
-        temp = self.top.str
+        temp = self.top.content
         self.top = self.top.next
         return temp
 

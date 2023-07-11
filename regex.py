@@ -4,15 +4,38 @@
     @refactor kevin.danek
 """
 import re
-from collections import OrderedDict
 
+def format_student(data, fields, i):
+    """Funkce pro formátování řádku se studentem
+
+    Args:
+        data (dict): Slovník s daty studentů
+        fields (dict): Slonvník s obory
+        i (int): index
+
+    Returns:
+        str: Naformátovaný řetězec
+    """
+    obor = data["obor"][i]
+    index = f'{len(fields[obor]) + 1:>2}:'
+    sex = f'{data["OC"][i][0]}'
+    name = f'{data["jmeno"][i]:<18}'
+    field = f'{data["obor"][i]:<3}'
+    personal_number = f'{data["OC"][i][1:]}'
+
+    return " ".join([index, sex, name, field, personal_number])
 
 def main():
     """
         Funkce realizující program
     """
-    lines = open("./vstup.html", "r").readlines()
+    lines = []
+
+    with open("./vstup.html", "r", encoding="utf-8") as file_handle:
+        lines = file_handle.readlines()
+
     result = []
+
     data = {
         "OC": [],
         "jmeno": [],
@@ -20,7 +43,7 @@ def main():
         "krestni": [],
         "obor": []
     }
-    
+
     fields = {
         "AI": [],
         "AVI": [],
@@ -32,11 +55,13 @@ def main():
         if re.search(r"\s[A-Z]\d", line):  # Osobni cisla
             line = line.lstrip(' ')
             data["OC"].append(line[:9])
+
         if re.search(r"AVI|AI|IS|IT", line, ):  # Obor
             line = line.lstrip(' ')
             line = re.findall(r'\>(.[A-Z]+)\<', line)
             for match in line:
                 data["obor"].append(match)
+
         if re.search(r"([A-Z])\w+\n", str(line)):  # Jmena
             line = line.lstrip(' ')
             line = line.strip()
@@ -54,24 +79,25 @@ def main():
     sort_oc = data["OC"]
     sort_oc = [sub[1:] for sub in sort_oc]  # odebrat pismeno
     sort_oc, data["OC"], data["prijmeni"], data["krestni"], data["obor"] = zip(
-        *sorted(zip(sort_oc, data["OC"], data["prijmeni"], data["krestni"], data["obor"]), key=lambda x: (not int(x[0]) % 2, x)))
+        *sorted(
+            zip(
+                sort_oc,
+                data["OC"],
+                data["prijmeni"],
+                data["krestni"],
+                data["obor"]
+            ),
+            key = lambda x: (not int(x[0]) % 2, x)
+        )
+    )
 
     data["jmeno"].clear()
 
     for jmeno in range(len(data["krestni"])):
-        name = data["prijmeni"][jmeno] + " " + data["krestni"][jmeno]
-        data["jmeno"].append(name)
+        data["jmeno"].append(f'{data["prijmeni"][jmeno]} {data["krestni"][jmeno]}')
 
     for i in range(len(data["obor"])):
-        obor = data["obor"][i]
-
-        index = f'{len(fields[obor]) + 1:>2}:'
-        sex = f'{data["OC"][i][0]}'
-        name = f'{data["jmeno"][i]:<18}'
-        field = f'{data["obor"][i]:<3}'
-        personal_number = f'{data["OC"][i][1:]}'
-
-        fields[obor].append(" ".join([index, sex, name, field, personal_number]))
+        fields[data["obor"][i]].append(format_student(data, fields, i))
 
     for obor, studenti in fields.items():
         result.append(f"{obor}:")
