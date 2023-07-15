@@ -10,6 +10,7 @@
 <tr><td style="text-align: right;">             lifo.py</td><td style="text-align: center;">       ✔️       </td><td style="text-align: center;">      10      </td></tr>
 <tr><td style="text-align: right;">             fifo.py</td><td style="text-align: center;">       ✔️       </td><td style="text-align: center;">      10      </td></tr>
 <tr><td style="text-align: right;">   unique_numbers.py</td><td style="text-align: center;">       ✔️       </td><td style="text-align: center;">      10      </td></tr>
+<tr><td style="text-align: right;">       word_count.py</td><td style="text-align: center;">       ✔️       </td><td style="text-align: center;">      10      </td></tr>
 <tr><td style="text-align: right;">              gps.py</td><td style="text-align: center;">       ✔️       </td><td style="text-align: center;">      10      </td></tr>
 <tr><td style="text-align: right;">            regex.py</td><td style="text-align: center;">       ✔️       </td><td style="text-align: center;">      10      </td></tr>
 </tbody>

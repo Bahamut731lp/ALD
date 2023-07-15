@@ -1,0 +1,30 @@
+Programming Brain Teasers Job Interviews
+ Elisha Chirchir Apr Comments Common Job Interview Questions answering questions applications brain brain teasers challenge code coding facebook google job interview job interviews jugs programming software developers tutorials twitter two ways unlimited supply wordpress
+Programming brain teasers during job interviews is a common thing for software developers This subject is too big to fit into a single post and there are books out there handling the same issues I will only touch on two specific questions you might be asked by your interviewer 
+programming brain teasers during job interviews
+I said upfront that these questions are brain teasers mainly for software developers The list of questions is quite long but I want to highlight just two 
+Programming Brain Teasers
+Question 
+You have two jugs has a quart capacity and the other has quarts They both have irregular shapes that means you cannot tell by simply looking how full the jugs are unless you fully fill them up with water Now with unlimited supply of water how would you obtain quarts of water using the two jugs 
+Solution 
+I am going to solve this problem in two ways but you could in as many ways as you want Let us do it 
+Step Fill the quart jug with water make sure it is totally full 
+Step Using the water in the quart jug fill the quart jug That means at this point the quart jug is empty and the quart jug has quarts of water in it 
+Step At this moment the quart jug has quarts of water meaning it needs quarts to fill it up Now fill the quart jug again with water Using the full quarts jug fill up the quarts jug remember it only needs quarts to be full After doing this step you will be left with quart in the quart jug 
+Step Right now the quart jug is full The quart jug has quart of water in it Now empty the quart jug Then pour the quart from the quart jug into the quart If you followed carefully you might have realized how close you are to completing this task The goal is to obtain quarts of water and you already have quart in the quart jug You only need more quarts 
+Step At this last step we start with quart in the quart jug All we need to do is fill up the quart jug and pour its water into the quart jug It is now a total of quarts How easy right 
+Solution 
+Step Fill the quart jug with water 
+Step Using the water in the quart jug fill up the quart jug At this point only quarts of water remain in the quart jug and the quart jug is full 
+Step Empty the quart jug After that pour the remaining quarts from the quart jug into the quart jug If you pause and think about it you realize that you only need more quart to fill up the quart jug At this point the quart jug is empty 
+Step Fill up the quart jug That means you have quarts of water in it Now to our final step 
+Step Finally fill up the quart jug using the full quart jug at the moment it already has quarts of water meaning it needs just quart to be full You are done here because if you fill up the quart jug you will be left with quarts of water in the quart jug Ta dah 
+Question 
+You have pool balls The problem is one of them is heavier than the rest You have two attempts to find the heavier ball using a weight balance Now show me how to do it 
+Solution
+I bet you are thinking well I know this But after thinking about it you might realize how tricky it is Here is the best way to solve it without biting someone s head off I don t think anyone should do this 
+Step Pick six balls at random After picking balls you leave balls behind for later You know you could just weigh those balls right now and if they don t balance you pick the heavier one and you are done Wow I never thought of that but assuming we didn t start with the two balls let us see our next step with the balls 
+Step Divide the balls into meaning you have balls on each side of the balance Remember you only have attempts at finding the heavier ball You can only use the balance twice Now weigh balls against balls If they balance that means the heavier ball is one of the remaining balls If that is the case you just weigh the balls and find the heavier one using your second weighing What if they don t balance 
+Step Assuming the two sides didn t balance on the scale simply pick the heavier side That means the heavier ball is in that set of balls Using your final weighing attempt move to the next step 
+Step Pick balls at random from that group Weigh one against the other If they balance then the remaining rd ball is the heavier ball If they don t balance just pick the one that goes down heavier one You are done 
+That is all for this post I hope you found these programming brain teasers during job interviews fun and challenging If you are preparing for a job interview I want to say good luck You can click here to read more about what to do while job searching Thanks again for stopping by 
