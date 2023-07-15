@@ -17,7 +17,7 @@ je někdy udělám nebo seženu lol).
 | [05 LIFO](Zadání/05%20LIFO.md)|✔️||✔️|||
 | [06 FIFO](Zadání/06%20FIFO.md)|✔️||✔️|||
 | [07 Unique Numbers](Zadání/07%20Unique%20Numbers.md)|✔️||✔️|||
-| [09 WordCount](Zadání/09%20WordCount.md)|✔️|||||
+| [09 WordCount](Zadání/09%20WordCount.md)|✔️||✔️|||
 | [10 Clock](Zadání/10%20Clock.md)|✔️|||||
 | [11 GPS](Zadání/11%20GPS.md)|✔️||✔️|||
 | [12 Regex](Zadání/12%20Regex.md)|✔️||✔️|||
