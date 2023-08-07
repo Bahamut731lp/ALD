@@ -87,6 +87,15 @@
         "cpp",
         "c"
       ]
+    },
+    {
+      "login": "ThomasKoten",
+      "name": "ThomasKoten",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92688427?v=4",
+      "profile": "https://github.com/ThomasKoten",
+      "contributions": [
+        "java"
+      ]
     }
   ],
   "projectName": "ALD",
