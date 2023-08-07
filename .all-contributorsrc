@@ -27,6 +27,31 @@
       "symbol": "🟧",
       "description": "Matlab",
       "link": "\"<%= description %>\"),"
+    },
+    "c": {
+      "symbol": "🌊",
+      "description": "CLang",
+      "link": "\"<%= description %>\"),"
+    },
+    "cpp": {
+      "symbol": "🌊➕➕",
+      "description": "C++",
+      "link": "\"<%= description %>\"),"
+    },
+    "csharp": {
+      "symbol": "🌊♯",
+      "description": "CSharp",
+      "link": "\"<%= description %>\"),"
+    },
+    "java": {
+      "symbol": "☕",
+      "description": "Java",
+      "link": "\"<%= description %>\"),"
+    },
+    "ruby": {
+      "symbol": "💎",
+      "description": "Ruby",
+      "link": "\"<%= description %>\"),"
     }
   },
   "commitType": "docs",
@@ -51,6 +76,16 @@
       "profile": "https://github.com/matejhampl",
       "contributions": [
         "python"
+      ]
+    },
+    {
+      "login": "DANKnespl",
+      "name": "DANKnespl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100779974?v=4",
+      "profile": "https://github.com/DANKnespl",
+      "contributions": [
+        "cpp",
+        "c"
       ]
     }
   ],
